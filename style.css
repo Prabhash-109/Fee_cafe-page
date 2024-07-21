@@ -1,0 +1,52 @@
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: moveToAndFro 10s infinite;
+    position: relative;
+    display: inline-block;
+}
+.hero h1:hover{
+    color: goldenrod;
+}
+a:hover{
+    background-color: rgb(211, 175, 85);
+}
+.hero p {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+@keyframes moveToAndFro { 
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+body {
+    background-image: url("https://muchata.com.in/wp-content/uploads/2024/06/pexels-daniel-reche-718241-1556688-1536x975.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+    margin: 0;
+    padding-bottom: 200px; /* Ensure there's space for the footer */
+    color: white; /* Ensures all text is white by default */
+}
+
+.hero {
+    color: white; /* Ensures the hero text is white */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Slight transparency for footer */
+    color: white;
+    position: absolute; /* Ensures footer stays at the bottom of content */
+    width: 100%;
+}
